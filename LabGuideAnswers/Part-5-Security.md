@@ -90,18 +90,13 @@ Implement the following:
 
 ```
 ---
-apiVersion: v1
-kind: ServiceAccount
-metadata:
- name: cluster-user-secretadmin
----
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
  name: cluster-role-secretadmin
 rules:
  - apiGroups: [""]
-   resources: ["secret"]
+   resources: ["secrets"]
    verbs: ["get", "list", "watch"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
