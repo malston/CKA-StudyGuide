@@ -19,6 +19,8 @@ http://www.kubernet.io/
 
 https://github.com/kelseyhightower/kubernetes-the-hard-way
 
+https://github.com/mmumshad/kubernetes-the-hard-way (Deployed on VirtualBox)
+
 https://linuxacademy.com
 
 https://kubernetes.io/docs/

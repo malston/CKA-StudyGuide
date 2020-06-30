@@ -8,13 +8,13 @@ Implement the following:
 
 
 
-*   Create the namespace “rbac-test”
-*   Create the service account “rbac-test-sa”
-*   Create a role “rbac-test-role” that grants the following pod level resources:
+*   Create the namespace "rbac-test"
+*   Create the service account "rbac-test-sa"
+*   Create a role "rbac-test-role" that grants the following pod level resources:
     *   Get
     *   Watch
     *   List
-*   Bind the “rbac-test-a” service account to the “rbac-test-role” role
+*   Bind the "rbac-test-a" service account to the "rbac-test-role" role
 
 
 ```
@@ -76,19 +76,16 @@ kubectl -n rbac-test --as=system:serviceaccount:rbac-test:rbac-test-sa auth can-
 no
 ```
 
-
 **<span style="text-decoration:underline;">Lab 2 - RBAC within a cluster</span>**
 
 Implement the following:
 
-
-
-*   Create the user “cluster-user-secretadmin” authenticating with a password
-*   Create a role “cluster-role-secretadmin” that grants the following cluster level secret resources:
+*   Create the user "cluster-user-secretadmin" authenticating with a password
+*   Create a role "cluster-role-secretadmin" that grants the following cluster level secret resources:
     *   Get
     *   Watch
     *   List
-*   Bind “cluster-user-secretadmin” user to the “cluster-role-secretadmin”
+*   Bind "cluster-user-secretadmin" user to the "cluster-role-secretadmin"
 
 
 ```
@@ -135,7 +132,7 @@ kubectl run nginx-web1 --image=nginx --labels="tier=web,env=test"
 
 
 
-*   Create two pods that can use “curl” named busybox1 and busybox2. Note the IP addresses assigned to them. Label them with tier:jumppod
+*   Create two pods that can use "curl" named busybox1 and busybox2. Note the IP addresses assigned to them. Label them with tier:jumppod
 
 
 ```
@@ -252,7 +249,7 @@ Create two pod security policies
 
 
 
-*   One named “Privileged” with no restrictions
+*   One named "Privileged" with no restrictions
 
 
 ```
@@ -288,7 +285,7 @@ spec:
 
 
 
-*   One named “Restricted” with the following restrictions
+*   One named "Restricted" with the following restrictions
     *   Cannot run privilaged containers
     *   Can only be exposed on port 433
 
@@ -397,7 +394,7 @@ Note: Ensure the location is somewhere that the pod has access to, as defined in
 
 
 
-*   Create a secret called “testsecret” via any applicable means. Verify the contents are encrypted
+*   Create a secret called "testsecret" via any applicable means. Verify the contents are encrypted
 
 
 ```
