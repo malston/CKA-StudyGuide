@@ -24,11 +24,10 @@ Or the newer recommended way:
 kubectl run nginx --restart=Never --image=nginx
 ```
 
-
 Generate POD Manifest YAML file (`-o yaml`). Don't create it(`--dry-run`)
 
 ```bash
-kubectl run --generator=run-pod/v1 nginx --image=nginx --dry-run -o yaml
+kubectl run nginx --restart=Never --image=nginx --dry-run -o yaml
 ```
 
 ## Deployment
