@@ -21,7 +21,7 @@ kubectl run --generator=run-pod/v1 nginx --image=nginx
 Or the newer recommended way:
 
 ```bash
-kubectl create nginx --restart=Never --image=nginx
+kubectl run nginx --restart=Never --image=nginx
 ```
 
 
